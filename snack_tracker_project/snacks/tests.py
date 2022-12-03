@@ -9,3 +9,13 @@ class Test(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response,'snack_list.html')
 
+    def test_snack_detail_page(self):
+        url=reverse('snack_detail',args=[1])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 404)
+    def test_home_page(self):
+        url=reverse('home')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response,'home.html')
+  

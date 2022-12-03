@@ -7,7 +7,7 @@ Author: Bashar Telfah
 ### Setup
 -  python 3.10.7
 
-## [Pull requests](https://github.com/Bashra99/django-models/pulls)
+## [Pull requests](https://github.com/Bashra99/django-models/pulls?q=is%3Apr+is%3Aclosed)
 
 
 #### run the server
